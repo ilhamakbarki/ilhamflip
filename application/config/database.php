@@ -72,8 +72,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
-
+//mysql://b4b2fde2bd234c:842c9020@us-cdbr-east-02.cleardb.com/heroku_a5162f965d68315?reconnect=true
 $db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'us-cdbr-east-02.cleardb.com',
+	'username' => 'b4b2fde2bd234c',
+	'password' => '842c9020',
+	'database' => 'heroku_a5162f965d68315',
+	'dbdriver' => 'mysql',
+	'dbprefix' => '',
+	'pconnect' => TRUE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => TRUE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+
+
+
+/*$db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
@@ -94,3 +118,4 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+*/
