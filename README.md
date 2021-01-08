@@ -31,7 +31,7 @@ Table Database
 	- fee float
 	- serialid bigint(20)
 
-Proses Service
+Proses Services
 1. Untuk melakukan Permintaan Pengiriman Uang Status Awal Input data pada Table withdraw_req dengan status 'REQUEST' 
 2. Jalankan Link Service
 3. Service akan mengupdate semua Data REQUEST Withdraw berdasarkan response dari API pihak ke 3 Flip.
