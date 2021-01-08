@@ -70,10 +70,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
-$active_group = 'default';
+$active_group = 'cloud';
 $query_builder = TRUE;
-//mysql://b4b2fde2bd234c:842c9020@us-cdbr-east-02.cleardb.com/heroku_a5162f965d68315?reconnect=true
-$db['default'] = array(
+
+$db['cloud'] = array(
 	'dsn'	=> '',
 	'hostname' => 'us-cdbr-east-02.cleardb.com',
 	'username' => 'b4b2fde2bd234c',
@@ -95,15 +95,13 @@ $db['default'] = array(
 	'save_queries' => TRUE
 );
 
-
-
-/*$db['default'] = array(
+$db['local'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => 'root',
 	'database' => 'flip',
-	'dbdriver' => 'mysql',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => TRUE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
@@ -118,4 +116,3 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
-*/

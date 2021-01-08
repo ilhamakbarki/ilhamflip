@@ -7,12 +7,13 @@ class Withdraw extends CI_Controller {
 		parent::__construct();
 	}
 
-	public function index()
+	public function service()
 	{
 		$this->load->model('Withdraw_m','w');
-		var_dump($this->w->get_request());
+		echo $this->w->send_request_withdraw();
+		echo $this->w->check_pending_withdraw();
+	
 	}
-
 }
 
 /* End of file Withdraw.php */
